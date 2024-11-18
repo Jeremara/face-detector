@@ -1,0 +1,46 @@
+***Face Detection Controlled Servo Motor***
+
+This project uses face detection to control a servo motor via an Arduino. The servo motor rotates to 90 degrees when a face is detected and returns to 0 degrees when no face is detected. The system combines Python (using OpenCV for face detection) and Arduino for servo control via serial communication.
+
+**Features**
+Face Detection: Detects faces in real-time using OpenCV.
+Servo Motor Control: Rotates the motor to a specific position when a face is detected.
+Arduino Integration: Facilitates communication between Python and Arduino using serial communication.
+
+**Requirements**
+Components Required
+Hardware:
+
+Arduino (e.g., Uno, Nano)
+Servo motor (e.g., SG90 or similar)
+Jumper wires
+USB cable for Arduino
+Software:
+
+Python 3.x
+Arduino IDE
+OpenCV library
+PySerial library
+
+Installation Instructions
+**1. Setup Arduino**
+Connect the servo motor to the Arduino:
+Signal: Connect to pin 9.
+Power: Connect to 5V.
+Ground: Connect to GND.
+Upload the Arduino code to the board using the Arduino IDE.
+code file **arduino.txt**
+
+**2. Install Python Libraries**
+Install the required Python libraries:
+
+*pip install opencv-python pyserial* or 
+*pip install -r requirements.txt*
+
+3. Connect Hardware
+Connect your Arduino to your computer via USB.
+Ensure the correct COM port is selected in the Python script and Arduino IDE.
+
+**4. Run the Python Script**
+*Place your face in front of the webcam. The servo motor will rotate to 90 degrees.*
+*Remove your face from the webcam. The servo motor will return to 0 degrees.*
