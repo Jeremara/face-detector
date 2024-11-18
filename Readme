@@ -1,4 +1,4 @@
-***Face Detection Controlled Servo Motor***
+# Face Detection Controlled Servo Motor
 
 This project uses face detection to control a servo motor via an Arduino. The servo motor rotates to 90 degrees when a face is detected and returns to 0 degrees when no face is detected. The system combines Python (using OpenCV for face detection) and Arduino for servo control via serial communication.
 
